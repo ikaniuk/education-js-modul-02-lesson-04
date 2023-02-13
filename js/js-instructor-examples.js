@@ -1,27 +1,31 @@
-/*
- * 1) Напиши функцию calculateTotalPrice(items)
- * которая принимает массив цен (чисел) и возвращает их сумму
- */
+// --------------------Задачи Репеты-------------------------
 
+// // 1)Напиши функцию calculateTotalPrice(items)
+// // которая принимает массив цен (чисел) и возвращает их сумму
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// const numbers = [4, 4, 5, 6, 1, 22];
 
 // function calculateTotalPrice(items) {
-    
 //     let total = 0;
-    
-//     for (const value of items) {
-//         total += value;
+//     for (const item of items) {
+//         total += item;
 //     }
-    
 //     return total;
 // }
 
-// const r1 = calculateTotalPrice([2, 2, 2]);
-// console.log(r1);
-// console.log(calculateTotalPrice([2, 3, 4,]));
-// console.log(calculateTotalPrice([100, 200, 50]));
+// console.log(calculateTotalPrice(cart));
+// console.log(calculateTotalPrice(numbers));
+// console.log(calculateTotalPrice([4, 2]));
 
 
-// 2)  Напиши функцию logItems(items) для перебора и логирования массива
+
+// -------------------------------------------------------------
+// 2) Напиши функцию logItems(items) для перебора и
+// логирования массива
+
+// const names = ['Arthur', 'Ihor', 'Katerina'];
+// const fruits = ['apple', 'strawberry', 'cocnut'];
 
 // function logItems(items) {
 //     for (const item of items) {
@@ -29,16 +33,58 @@
 //     }
 // }
 
-// logItems([2, 3, 1]);
-// logItems(['Polly', 'Kiwi', 'Ajyax', 'Logo']);
+// logItems([2, 4, 5,]);
+// console.log('----------------');
+// logItems(fruits);
+// console.log('----------------');
+// logItems(names);
 
 
-// 3)Напиши функцию findLogin(allLogins, login) для поиска логина
-//  * - Если логина нет, вывести сообщение 'Пользователь [логин] не найден.'
-//  * - Если нашли логин, вывести сообщение 'Пользователь [логин] найден.'
+
+// ---------------------------------------------------
+// 3) Напиши функцию findLogin(allLogins, login) для поиска логина
+// Если логина нет, вывести сообщение 'Пользователь [логин] не найден.'
+// Если нашли логин, вывести сообщение 'Пользователь [логин] найден.'
+
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
 
 // function findLogin(allLogins, loginToFind) {
-    
+//     
+//     if (allLogins.includes(loginToFind)) {
+//         return `Пользователь ${loginToFind} найден.`;
+//     }
+//     return `Пользователь ${loginToFind} не найден.`;
 // }
+
+// console.log(findLogin(logins, 'k1widab3st'))
+
+// ------------------------------------------------------------------
+
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
+
+// function findLogin(allLogins, loginToFind) {
+//     for (const login of allLogins) {
+//         if (login === loginToFind) {
+//             return `Пользователь ${loginToFind} найден.`;
+//         }
+//     }
+//     return `Пользователь ${loginToFind} не найден.`;
+// }
+
+// console.log(findLogin(logins, 'm4ngoDogea'));
+// console.log(findLogin(logins, 'poly1scute'));
+
+// --------------------------------------------------------------------------
+
+// const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
+
+// function findLogin(allLogins, loginToFind) {
+//     return allLogins.includes(loginToFind)
+//         ? `Пользователь ${loginToFind} найден.`
+//         : `Пользователь ${loginToFind} не найден.`;
+// }
+
+// console.log(findLogin(logins, 'poly1scute'));
+
 
 
