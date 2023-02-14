@@ -104,3 +104,50 @@
 
 // console.log(findSmallesNumber([4, 76, 100, 2, 5, 0, 1, -1]));
 // console.log(findSmallesNumber([1, 2, 0]));
+
+
+// 5) Напиши функцию changeCase(string) которая заменяет регистр
+// каждого символа в строке на противоположный.
+// Например, если строка «JavaScript», то на выходе должена быть строка «jAVAsCRIPT».
+
+// --------------мое решение------------------------------
+// =============================================================================
+
+// const string = 'JavaScript';
+
+// function changeCase(string) {
+
+//     const letters = string.split('');
+//     const reversLetters = [];
+
+//     for (const letter of letters) {
+//         if (letter === letter.toUpperCase()) {
+//             reversLetters.push(letter.toLowerCase());
+//         } else {
+//             reversLetters.push(letter.toUpperCase());
+//         }
+//     }
+//     const reversString = reversLetters.join('');
+
+//     return reversString;
+// }
+
+// console.log(changeCase(string));
+// console.log(changeCase('BIG small'))
+// ------------------------------------------------------------------------
+
+// ==========================тернарный оператор==============================
+
+// const string = 'JavaScript';
+
+// function changeCase(string) {
+//     let invertedString = '';
+//     for (const letter of string) {
+//         const isEqual = letter === letter.toLowerCase();
+//         invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
+//     }
+
+//     return invertedString;
+// }
+
+// console.log(changeCase(string));
