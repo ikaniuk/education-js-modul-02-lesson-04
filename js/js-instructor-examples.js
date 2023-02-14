@@ -86,5 +86,28 @@
 
 // console.log(findLogin(logins, 'poly1scute'));
 
+// let randomValue = Math.floor(Math.random() * 101);
+//       let attempt = 0;
+//       alert("я загадал случайное значение от 0 до 100");
 
+//       while (true) {
+//         attempt++; // увеличили количество попыток
+//         let currentValue = prompt("Попробуйте угадать. Введите значение");
+
+//         if (currentValue == "стоп") {
+//           break;
+//         }
+
+//         if (currentValue > randomValue) {
+//           alert(`Я загадал значение меньше чем ${currentValue}`);
+//         } else if (currentValue < randomValue) {
+//           alert(`Я загадал значение больше чем ${currentValue}`);
+//         }
+//         if (currentValue == randomValue) {
+//           alert(`Правильно! Загаданное значение ${randomValue}. Вы угадали с ${attempt}й попытки.`
+            
+//           );
+//           break;
+//         }
+//       }
 
