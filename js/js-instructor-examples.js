@@ -49,7 +49,7 @@
 // const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
 
 // function findLogin(allLogins, loginToFind) {
-//     
+//
 //     if (allLogins.includes(loginToFind)) {
 //         return `Пользователь ${loginToFind} найден.`;
 //     }
@@ -86,28 +86,21 @@
 
 // console.log(findLogin(logins, 'poly1scute'));
 
-// let randomValue = Math.floor(Math.random() * 101);
-//       let attempt = 0;
-//       alert("я загадал случайное значение от 0 до 100");
 
-//       while (true) {
-//         attempt++; // увеличили количество попыток
-//         let currentValue = prompt("Попробуйте угадать. Введите значение");
 
-//         if (currentValue == "стоп") {
-//           break;
+// ----------------------------------
+// 4) Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве,
+// при условии что числа уникальные (не повторяются).
+
+// function findSmallesNumber(numbers) {
+//     let smallesNumber = numbers[0];
+//     for (const number of numbers) {
+//         if (number < smallesNumber) {
+//             smallesNumber = number;
 //         }
+//     }
+//     return smallesNumber;
+// }
 
-//         if (currentValue > randomValue) {
-//           alert(`Я загадал значение меньше чем ${currentValue}`);
-//         } else if (currentValue < randomValue) {
-//           alert(`Я загадал значение больше чем ${currentValue}`);
-//         }
-//         if (currentValue == randomValue) {
-//           alert(`Правильно! Загаданное значение ${randomValue}. Вы угадали с ${attempt}й попытки.`
-            
-//           );
-//           break;
-//         }
-//       }
-
+// console.log(findSmallesNumber([4, 76, 100, 2, 5, 0, 1, -1]));
+// console.log(findSmallesNumber([1, 2, 0]));
