@@ -151,3 +151,56 @@
 // }
 
 // console.log(changeCase(string));
+
+
+/* 6)
+ * Напиши функцию slugify(string) которая получает строку и возвращает URL-slug
+ * Строка состоит только из букв и пробелов
+ */
+
+// function slugify(string) {
+    
+//     return string.toLowerCase().split(' ').join('-');
+
+// }
+
+// console.log(slugify('Top 10 benefits of React framework'));
+// console.log(slugify('Azure Static Web Apps are Awesome'));
+// console.log(slugify('Technical writing tips for non-native English speakers'));
+
+
+/* 7)
+ * Напиши функцию add для сложения произвольного количества аргументов (чисел)
+ * - Операция ... (rest)
+ */
+
+
+// function add(...args) {
+//     // console.log(args);
+//     let total = 0;
+//     for (const arg of args) {
+//         // console.log(arg);
+//         total += arg;
+//     }
+//     return total;
+// }
+
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 4, 5, 6));
+
+
+/*8) 
+ * Напиши функцию filterNumbers(array [, number1, ...]) которая:
+ * - первым аргументом принимает массив чисел
+ * - после первого аргумента может быть произвольное количество других аргументов которые будут числами.
+ * - Функция должна вернуть новый массив, в котором будут только те аргументы, начиная со второго,
+ *   для которых есть аналог в оригинальном массиве.
+ */
+
+
+// console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
+// console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
+// console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
+
+
+
