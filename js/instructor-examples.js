@@ -101,3 +101,86 @@
 
 // console.log(findLargestNumber([2, 17, 94, 1, 23, 37])); // 94
 // console.log(findLargestNumber([49, 4, 7, 83, 12])); // 83
+
+
+// Example 7 - Середнє значення
+// Напишіть функцію calAverage() яка приймає довільну кількість аргументів
+// і повертає їхнє середнє значення.Усі аргументи будуть лише числами.
+// function calAverage(...numbers) {
+//     let averageValue = 0;
+//     for (const number of numbers) {
+//         averageValue += number;
+//     }
+//     return averageValue / numbers.length;
+// }
+
+// console.log(calAverage(1, 2, 3, 4)); // 2.5
+// console.log(calAverage(14, 8, 2)); // 8
+// console.log(calAverage(27, 43, 2, 8, 36)); // 23.2
+
+
+// Example 8 - Форматування часу
+// Напиши функцію formatTime(minutes) яка переведе значення minutes
+// (кількість хвилин) у рядок у форматі годин та хвилин HH: MM.
+
+
+// function formatTime(totalMinutes) {
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// // console.log(hours);
+// // console.log(minutes);
+
+// const doubleDigitHours = String(hours).padStart(2, 0);
+// const doubleDigitMinutes = String(minutes).padStart(2, 0);
+//     // console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+    
+//     return `${doubleDigitHours}:${doubleDigitMinutes}`
+// }
+
+// console.log(formatTime(70)); // "01:10"
+// console.log(formatTime(450)); // "07:30"
+// console.log(formatTime(1441)); // "24:01"
+
+
+// Example 9 - Колекція курсів (includes, indexOf, push і т. д.)
+// Напишіть функції для роботи з колекцією навчальних курсів courses:
+
+// addCourse(name) - додає курс до кінця колекції
+// removeCourse(name) - видаляє курс із колекції
+// updateCourse(oldName, newName) - змінює ім'я на нове
+
+// const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+
+// function addCourse(newCourse) {
+//     if(courses.includes(newCourse)) {
+//         console.log('Ви вже маєте такий курс'); 
+//     } else {
+//         courses.push(newCourse);
+//     }
+    
+// }
+
+// function removeCourse(nameOfCourse) {
+//     if (!courses.includes(nameOfCourse)) {
+//         console.log('Курс із таким ім`я м не знайдено');
+//     } else {
+//         courses.splice(courses.indexOf(nameOfCourse), 1);
+//     }
+// }
+
+// function updateCourse(oldName, newName) {
+//     if (courses.includes(oldName)) {
+//         courses.splice(courses.indexOf(oldName), 1, newName);
+//     }
+// }
+
+// addCourse('Express');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse('CSS'); // 'Ви вже маєте такий курс'
+
+// removeCourse('React');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse('Vue'); // 'Курс із таким ім'ям не знайдено'
+
+// updateCourse('Express', 'NestJS');
+// console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
